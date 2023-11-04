@@ -1,0 +1,12 @@
+{{ block title }}
+    PLAYER 3
+{{ endblock }}
+{{ block content }}
+    <h2>Punisher Decision</h2>
+    <p>Player 1 has sent {{ amount_sent }} Ksh to Player 2. Decide whether to punish or not:</p>
+    <form method="post">
+        {{ form.punish }}
+        <button type="submit">Submit</button>
+    </form>
+
+{{ endblock }}

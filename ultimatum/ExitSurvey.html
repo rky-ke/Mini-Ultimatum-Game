@@ -1,0 +1,13 @@
+{{ block title }}
+   Exit Survey
+{{ endblock }}
+{{ block content }}
+    
+    <form method="post">
+        {{ form.capital_city.label }} {{ form.capital_city }}
+        {{ form.math_answer.label }} {{ form.math_answer }}
+        {{ form.population.label }} {{ form.population }}
+        <button type="submit">Submit</button>
+    </form>
+
+{{ endblock }}
