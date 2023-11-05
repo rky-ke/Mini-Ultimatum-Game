@@ -36,6 +36,7 @@ To run this project, follow these steps:
    ```
 
 2. **Navigate to the Project Folder:**
+
    Change the directory to the project folder:
 
    ```bash
@@ -44,6 +45,7 @@ To run this project, follow these steps:
    ```
 
 3. **Set Up a Virtual Environment:**
+
    Create a virtual environment and activate it:
 
    ```bash
@@ -53,6 +55,7 @@ To run this project, follow these steps:
    ```
 
 4. **Install Dependencies:**
+
    Install the required Python packages listed in the requirements.txt file:
 
    ```bash
@@ -70,4 +73,5 @@ To run this project, follow these steps:
    The server will provide a URL where you can access the game in your web browser (usually http://127.0.0.1:8000).
 
 6. **Play The Game:**
+
    Follow the on-screen instructions to play the game and participate in the exit survey
