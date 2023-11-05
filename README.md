@@ -1,4 +1,4 @@
-# oTree Ultimatum Game
+# Mini Ultimatum Game
 
 This project is an implementation of a mini ultimatum game using the oTree framework. In this game, three players interact with each other, with one player endowed with Ksh 200, and the others making decisions based on the initial offer.
 
@@ -24,8 +24,50 @@ The game concludes with an exit survey that consists of three questions to gathe
 
 ## Installation
 
-To run this project, you'll need to have oTree installed. If you haven't installed oTree, you can do so with pip:
+To run this project, follow these steps:
+
+1. **Clone the Repository:**
+
+   Open your command-line terminal and clone this repository to your local machine by running:
+
+   ```bash
+   git clone https://github.com/rky-ke/Mini-Ultimatum-Game.git 
+   
+   ```
+
+2. **Navigate to the Project Folder:**
+Change the directory to the project folder:
 
 ```bash
-pip install requirements.txt   
+cd Mini-Ultimatum-Game
 
+```
+
+3. **Set Up a Virtual Environment:**
+Create a virtual environment and activate it:
+
+```bash
+python -m venv otree-env
+source otree-env/bin/activate  #I am Using Ubuntu Operating System
+
+```
+
+4. **Install Dependencies:**
+Install the required Python packages listed in the requirements.txt file:
+
+```bash
+pip install -r requirements.txt
+
+```
+
+5. **Run the oTree Development Server:**
+
+Start the oTree development server to run the game:
+```bash
+otree devserver
+
+```
+The server will provide a URL where you can access the game in your web browser (usually http://127.0.0.1:8000).
+
+6. ***Play The Game***
+Follow the on-screen instructions to play the game and participate in the exit survey
