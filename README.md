@@ -69,5 +69,5 @@ To run this project, follow these steps:
    ```
    The server will provide a URL where you can access the game in your web browser (usually http://127.0.0.1:8000).
 
-6. **Play The Game**
+6. **Play The Game:**
    Follow the on-screen instructions to play the game and participate in the exit survey
