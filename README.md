@@ -36,38 +36,38 @@ To run this project, follow these steps:
    ```
 
 2. **Navigate to the Project Folder:**
-Change the directory to the project folder:
+   Change the directory to the project folder:
 
-```bash
-cd Mini-Ultimatum-Game
+   ```bash
+   cd Mini-Ultimatum-Game
 
-```
+   ```
 
 3. **Set Up a Virtual Environment:**
-Create a virtual environment and activate it:
+   Create a virtual environment and activate it:
 
-```bash
-python -m venv otree-env
-source otree-env/bin/activate  #I am Using Ubuntu Operating System
+   ```bash
+   python -m venv otree-env
+   source otree-env/bin/activate  #I am Using Ubuntu Operating System
 
-```
+   ```
 
 4. **Install Dependencies:**
-Install the required Python packages listed in the requirements.txt file:
+   Install the required Python packages listed in the requirements.txt file:
 
-```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
-```
+   ```
 
 5. **Run the oTree Development Server:**
 
-Start the oTree development server to run the game:
-```bash
-otree devserver
+   Start the oTree development server to run the game:
+   ```bash
+   otree devserver
 
-```
-The server will provide a URL where you can access the game in your web browser (usually http://127.0.0.1:8000).
+   ```
+   The server will provide a URL where you can access the game in your web browser (usually http://127.0.0.1:8000).
 
-6. ***Play The Game***
-Follow the on-screen instructions to play the game and participate in the exit survey
+6. **Play The Game**
+   Follow the on-screen instructions to play the game and participate in the exit survey

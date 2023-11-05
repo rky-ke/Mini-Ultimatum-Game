@@ -45,7 +45,7 @@ ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD')
 
 DEMO_PAGE_INTRO_HTML = """
-<h1>Interview Task with Busara</h1>
+<h1>Mini-Ultimatum Game</h1>
 """
 
 
