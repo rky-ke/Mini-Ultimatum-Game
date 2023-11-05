@@ -1,5 +1,7 @@
 # Mini Ultimatum Game
 
+**Important Notice**: Contributions to this project are restricted until November 10, 2023, for ongoing research and development. During this period, the repository is in a read-only state and will not accept pull requests or issues. We appreciate your interest and look forward to welcoming contributions when the restriction is lifted.
+
 This project is an implementation of a mini ultimatum game using the oTree framework. In this game, three players interact with each other, with one player endowed with Ksh 200, and the others making decisions based on the initial offer.
 
 ## Project Overview
