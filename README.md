@@ -72,7 +72,7 @@ To run this project, follow these steps:
    otree devserver
 
    ```
-   The server will provide a URL where you can access the game in your web browser (usually http://127.0.0.1:8000).
+   The server will provide a URL where you can access the game in your web browser (usually `http://127.0.0.1:8000`)
 
 6. **Play The Game:**
 
@@ -90,3 +90,4 @@ To resolve this, follow these steps:
 
       ```bash
       rm db.sqlite3
+   
