@@ -78,7 +78,7 @@ To run this project, follow these steps:
 
    Follow the on-screen instructions to play the game and participate in the exit survey
 
-**Note for first time oTree Users**: 
+## Note for first time oTree User 
 
 If you are using oTree for the first time and encounter issues with starting the development server, you may receive a message like "oTree has been updated. Please delete your database (db.sqlite3)." 
 
