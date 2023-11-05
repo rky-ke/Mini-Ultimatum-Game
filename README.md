@@ -77,3 +77,16 @@ To run this project, follow these steps:
 6. **Play The Game:**
 
    Follow the on-screen instructions to play the game and participate in the exit survey
+
+**Note for first time oTree Users**: 
+
+If you are using oTree for the first time and encounter issues with starting the development server, you may receive a message like "oTree has been updated. Please delete your database (db.sqlite3)." 
+
+To resolve this, follow these steps:
+
+   1. **Delete the Database:**
+
+      Open your terminal and navigate to the project directory. Then, delete the existing `db.sqlite3` database by running:
+
+      ```bash
+      rm db.sqlite3
