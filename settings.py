@@ -8,6 +8,13 @@ SESSION_CONFIGS = [
         num_demo_participants=3,
         
     ),
+        dict(
+        name='survey', 
+        app_sequence=['survey'], 
+        num_demo_participants=1,
+        
+    ),
+    
     
 ]
 
@@ -45,7 +52,7 @@ ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD')
 
 DEMO_PAGE_INTRO_HTML = """
-<h1>Mini-Ultimatum Game</h1>
+<h2>Mini-Ultimatum Game</h2>
 """
 
 

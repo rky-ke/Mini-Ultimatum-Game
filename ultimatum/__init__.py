@@ -4,11 +4,11 @@ doc = """
 Mini-Ultimatum Game
 """
 
-class Constants(BaseConstants):
-    name_in_url = 'ultimatum'
-    players_per_group = 3
-    num_rounds = 1
-    endowment = cu(200)
+class C(BaseConstants):
+    NAME_IN_URL = 'my_trust'
+    PLAYERS_PER_GROUP = 3
+    NUM_ROUNDS = 1
+    ENDOWMENT = cu(200)
 
 class Subsession(BaseSubsession):
     pass
@@ -18,40 +18,34 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     amount_sent = models.CurrencyField(
-        min=0, max=Constants.endowment,
-        doc="Amount sent to Player 2"
+        min=cu(0),
+        max=C.ENDOWMENT,
+        label="How much do you want to send to Player 2?"
     )
     punish = models.BooleanField(
-        doc="Punish Player 1 (True) or Not Punish (False)"
+        label="Do you want to punish Player 1?"
     )
     capital_city = models.StringField(
         choices=["Kisumu", "Nairobi", "Mombasa"],
-        doc="Capital city of Kenya"
+        label="What is the capital city of Kenya?"
     )
     math_answer = models.IntegerField(
-        min=0,
-        doc="Math answer (14 + 15)"
+        label="What is 15 + 14?"
     )
     population = models.IntegerField(
-        min=0,
-        doc="Population of Kenya"
+        label="What is the population of Kenya?"
     )
-
+# PAGES
 class Player1Decision(Page):
     form_model = 'player'
     form_fields = ['amount_sent']
 
     def is_displayed(self):
         return self.id_in_group == 1
-    def vars_for_template(self):
-        return {
-            'endowment': Constants.endowment
-        }
     
     
 class WaitForPlayer1(WaitPage):
-    def is_displayed(self):
-        return self.id_in_group != 1
+    pass
 
 class PunisherDecision(Page):
     form_model = 'player'
@@ -65,20 +59,19 @@ class PunisherDecision(Page):
         }
 
 class WaitForPunisher(WaitPage):
-    def is_displayed(self):
-        return self.id_in_group != 3
+    pass
     
 class Results(Page):
+    @staticmethod
     def vars_for_template(self):
         player1 = self.group.get_player_by_id(1)
-        player2 = self.group.get_player_by_id(2)
         punisher = self.group.get_player_by_id(3)
         
         if punisher.punish:
             player1_payout = 0
             player2_payout = 0
         else:
-            player1_payout = Constants.endowment - player1.amount_sent
+            player1_payout = C.ENDOWMENT - player1.amount_sent
             player2_payout = player1.amount_sent
 
         return {
@@ -97,7 +90,7 @@ class ExitSurvey(Page):
             return 'Your answer to the math question is incorrect. Please provide the correct answer to continue.'
 
 
-class FinalResults(Page):
+class TheEnd(Page):
     pass
 
 page_sequence = [
@@ -107,5 +100,5 @@ page_sequence = [
     WaitForPunisher,
     Results,
     ExitSurvey,
-    FinalResults,
+    TheEnd,
 ]

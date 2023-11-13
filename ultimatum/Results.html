@@ -3,10 +3,40 @@
 {{ endblock }}
 
 {{ block content }}
-    <p>Player 1 sent {{ player1_amount_sent }} Ksh to Player 2.</p>
-    <p>Punisher decision: {{ punisher_decision }}</p>
-    <p>Your payout: {{ player1_payout }} Ksh</p>
-    <p>Player 2 received {{ player2_amount_received }} Ksh.</p>
+    {{ if player.id_in_group == 1 }}
+    <p>
+        You sent {{ player1_amount_sent }} to Player 2.
+    </p>
+    <p>
+        Punisher decision: {{ punisher_decision }}
+    </p>
+    <p>
+        Your payout: {{ player1_payout }}
+    </p>
+    {{ elif player.id_in_group == 2 }}
+    <p>
+        Player 1 sent you: {{ player1_amount_sent }}
+    </p>
+    <p>
+        Punisher decision: {{ punisher_decision }}
+    </p>
+    <p>
+        Your payout: {{ player2_amount_received }}
+    </p>
+    {{ else }}
+    <p>
+        Player 1 sent {{ player1_amount_sent }} Ksh to Player 2.
+    </p>
+    <p>
+        Your decision: {{ punisher_decision }}
+    </p>
+    <p>
+        Player 1 payout: {{ player1_payout }}
+    </p>
+    <p>
+        Player 2 payout: {{ player2_amount_received }}
+    </p>
+    {{ endif }}
     {{ next_button }}
 {{ endblock }}
 

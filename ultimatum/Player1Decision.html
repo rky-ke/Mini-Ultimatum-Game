@@ -2,11 +2,8 @@
     PLAYER 1 OFFER
 {{ endblock }}
 {{ block content }}
-    <p>You have been endowed with {{ endowment }} Ksh. Send any amount to Player 2:</p>
-    <form method="post">
-        {{ form.amount_sent }}
-        {{ formfield_errors 'amount_sent' }}
-        <button type="submit">Submit</button>
-    </form>
+    <p>You have been endowed with {{ C.ENDOWMENT }}:</p>
+    {{ formfields }}
+    {{ next_button }}
 
 {{ endblock }}
