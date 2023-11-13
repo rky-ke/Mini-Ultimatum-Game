@@ -1,6 +1,5 @@
-This project is an implementation of a mini ultimatum game using the oTree framework. In this game, three players interact with each other, with one player endowed with Ksh 200, and the others making decisions based on the initial offer.
-
 ## Project Overview
+This project is an implementation of a mini ultimatum game using the oTree framework. In this game, three players interact with each other, with one player endowed with Ksh 200, and the others making decisions based on the initial offer.
 
 ### Game Flow
 
