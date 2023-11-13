@@ -107,8 +107,4 @@ To resolve this, follow these steps:
 ## Acknowledgments
 
 This project was built using the [oTree framework](https://www.otree.org/). Special thanks to the oTree developers and community.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
    
