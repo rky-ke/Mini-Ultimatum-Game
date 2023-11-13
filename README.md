@@ -1,7 +1,5 @@
 # Mini Ultimatum Game
 
-**Important Notice**: Contributions to this project are restricted until November 10, 2023, for ongoing research and development. During this period, the repository is in a read-only state and will not accept pull requests or issues. We appreciate your interest and look forward to welcoming contributions when the restriction is lifted.
-
 This project is an implementation of a mini ultimatum game using the oTree framework. In this game, three players interact with each other, with one player endowed with Ksh 200, and the others making decisions based on the initial offer.
 
 ## Project Overview
@@ -90,4 +88,27 @@ To resolve this, follow these steps:
 
       ```bash
       rm db.sqlite3
+
+## Version History
+### Version 1 (Initial Release)
+
+    - Basic implementation of the mini ultimatum game.
+    - Three players interact with each other.
+    - Player 1 decides the initial offer, and Player 3 decides to Punish   or Not Punish based on fairness.
+
+### Version 2
+
+    - Simplified input by using label-based input instead of forms for player decisions.
+    - Updated templates for a better player experience.
+    - Removed WaitForPunisher.html for a streamlined game flow.
+    - Renamed FinalResults.html to TheEnd.html for clarity.
+    - Customized Results.html for each player with if statements.
+
+## Acknowledgments
+
+This project was built using the [oTree framework](https://www.otree.org/). Special thanks to the oTree developers and community.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
    
